@@ -7,11 +7,6 @@ module.exports = function (db) {
 
    var User = db.define('user', {
         email: {
-            type: Sequelize.STRING,
-            allowNull: false,
-            unique: true
-        },
-        name: {
             type: Sequelize.STRING
         },
         isAdmin: {
